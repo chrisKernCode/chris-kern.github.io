@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris Kern - Portfolio</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+    <link rel="stylesheet" type="text/css" href="/public/css/background.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/media.css"/>
+    <link rel="stylesheet" type="text/css" href="profile/profileStyle.css">
+    <!-- <link rel="stylesheet" type="text/css" href="public/css/zooming.css"> -->
+  </head>
+  
+  <body onload="loadingSpinner()">
+       <!-- Mouse Circle -->
+       <div class="mouse-circle"></div>
+       <div class="mouse-dot"></div>
+       <!-- End of Mouse Circle -->
+  
+      <div id="spinner-winner" class="spinner-box-circle" style="display:block";>
+        <div class="circle-border">
+          <div class="circle-core"></div>
+        </div>  
+      </div>
+
+    <div class="mouse-circle"></div>
+    <div class="mouse-dot"></div>
+
+        <a href="index.html" id="page-logo" class="logo sticky">Chris Kern</a>
+
+    <nav class="navbar">
+        <a href="index.html" class="navbar-link pointer-enter">Home</a>
+        <a href="profile.html" class="navbar-link pointer-enter link-profile-page">Über mich</a>
+        <a href="projects.html" class="navbar-link pointer-enter">Projekte</a>
+        <a href="skills.html" class="navbar-link pointer-enter">Skills</a>
+        <a href="game.html" class="navbar-link pointer-enter">Spiel</a>
+      </nav>
+
+<section id="profile-section">
+    <div class="staticstars" id="blinkingstars"></div>
+
+    
+    <div class="profile-card-wrap">
+      <input id="check" type="checkbox" class="check"><label for="check" class="toggle pointer-enter"> + </label>
+      <div class="content">
+        <div class="title"><strong>@chris_k_e_r_n</strong></div>
+        <p>Ich bin ein Applikations-Entwickler aus Österreich (Tirol)... und dabei meine Fähigkeiten im Full-Stack-Web-Development, Web-Design und Coding zu erweitern.</p>
+      </div>
+
+
+      <div class="link-info">
+        <div class="social">
+          <a class="link fb" href="" target="_blank"><i class="fa"></i></a>
+          <a class="link tw pointer-enter" href="https://twitter.com/chris_k_e_r_n" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a class="link cp pointer-enter" href="https://github.com/chrisKernCode" target="_blank"><i class="fa fa-github"></i></a>
+          <a class="link pi pointer-enter" href="https://linkedin.com/in/christof-kern" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a class="link li pointer-enter" href="https://www.xing.com/profile/Christof_Kern4/cv" target="_blank"><i class="fa fa-xing"></i></a>
+          <a class="link yt pointer-enter" href="https://www.youtube.com/watch?v=oqPQ8h4nmDk" target="_blank"><i class="fa fa-youtube-play"></i></a>
+          <a class="link gp" href="" target="_blank"><i class="fa"></i></a>
+        </div>
+        <div class="photo"></div>
+      </div>
+    </div>
+
+
+<div id="profile">
+    <img id="profile-border" src="profile-border.png" />
+    <img id="profile-hobbies-img" src="profile/hobbies.png" />
+      <!-- Main Button -->
+                                
+          <a href="/skills.html" target="_blank" id="main-button-skills" class="main-btn-profile">
+            <div class="main-btn-profile-content center" id="main-btn-profile">
+              <div class="main-btn-profile-line"></div>
+              <div class="main-btn-profile-line"></div>
+              <div class="main-btn-profile-line"></div>
+              <span>Mehr anzeigen</span>
+            </div>
+          </a>
+
+        <!-- End of Main Button -->
+
+  <div id="profileWelcome">
+    <p id="profilefirstSentence">
+     Tauche ein in mein <span id="profileUniverse"></span></br><strong>Universum</strong></span>
+    </p>
+    Klick auf die 
+    </span><span id="sun1" style="color: #F66120;">
+    <strong> Sonne</strong> 
+    </span></br> in der Mitte
+    </br>
+    <div class="spinner-box">
+      <div class="blue-orbit leo">
+      </div>
+    
+      <div class="green-orbit leo">
+      </div>
+      
+      <div class="red-orbit leo">
+      </div>
+      
+      <div class="white-orbit w1 leo">
+      </div>
+      <div class="white-orbit w2 leo">
+      </div>
+      <div class="white-orbit w3 leo">
+      </div>
+    </div>
+    <div id="profilelastSentenceSmall">...und erfahre mehr über mich.</div>
+    </div>
+                                  
+      <div id="profileContent">
+        <h2 id="profileContentTitle"></h2>
+            <p id="profileSubtitle"></p>
+            <p id="profileDescription"></p>
+        </div>
+
+        <div id="profileSocial" class="social-a">
+          <p>Bewerbungs-Portfolio<br />&copy; 2022 - Christof Kern, MA</p>
+            <a class="pointer-enter" href="/impressum.html">Impressum</a>
+            <a class="pointer-enter" href="/dsgvo.html">Datenschutz</a>
+        </div>
+
+          <div>
+            </div>
+            </div>
+
+            <div>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+              <script src="profile/OrbitControls.js"></script>
+              <script src="profile/profileScript.js"></script>
+            </div>
+
+      </section>
+            <script src="/public/js/loader.js"></script>
+            <script src="/public/js/background.js"></script>
+            <!-- <script src="/public/js/zooming.js"></script>       -->
+  </body>
+</html>

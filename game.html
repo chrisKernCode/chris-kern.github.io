@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris Kern - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="public/css/background.css">
+    <link rel="stylesheet" type="text/css" href="public/css/mainStyle.css">
+    <link rel="stylesheet" type="text/css" href="public/css/smallSolarSystem.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/game.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/media.css"/>
+  </head>
+
+  <body>
+    <!-- Mouse Circle -->
+    <div class="mouse-circle"></div>
+    <div class="mouse-dot"></div>
+    <!-- End of Mouse Circle -->
+    <!-- Page Container -->
+
+    <div class="container">
+      <!-- Page BG -->
+      <div class="staticstars" id="blinkingstars"></div>
+      <!-- End of Page BG -->
+
+      <!-- Progress Bar -->
+      <a href="#" class="progress-bar center sticky">
+        <div class="half-circle"></div>
+        <div class="half-circle"></div>
+        <div class="half-circle-top"></div>
+        <div class="progress-bar-circle center">&#8595;</div>
+      </a>
+      <!-- End of Progress Bar -->
+
+      <!-- Navigation -->
+
+      <!-- Menu Icon -->
+      <div class="menu-icon center">
+        <div class="menu-icon-line"></div>
+        <div class="menu-icon-line"></div>
+      </div>
+      <!-- End of Menu Icon -->
+    <main>
+        <!-- Navbar -->
+        <nav class="navbar">
+          <a href="index.html" class="navbar-link pointer-enter">Home</a>
+          <a href="profile.html" class="navbar-link pointer-enter link-profile-page">Über mich</a>
+          <a href="projects.html" class="navbar-link pointer-enter">Projekte</a>
+          <a href="skills.html" class="navbar-link pointer-enter">Skills</a>
+          <a href="game.html" class="navbar-link pointer-enter">Spiel</a>
+        </nav>
+        <!-- End of Navbar -->
+        <!-- End of Navigation -->
+
+        <!-- Home - Circles-->
+        <section class="home center" id="home">
+          <!-- Logo -->
+          <a href="index.html" id="page-logo" class="logo sticky">Chris Kern</a>
+          <!-- End of Logo -->
+    <!-- Page Container -->
+<div class="container">
+  <h2 class="section-heading-game-left">Interaktives</h2>
+  <h2 class="section-heading-game-right">Coding</h2>     
+      <!-- Section 5 - Game -->
+      <!-- <section> -->
+      <!-- Schere-Stein-Papier -->
+
+      <section class="section-game" id="section-game">
+
+        <div>
+          <p class="game-heading-text"></p>
+          <!-- <p id="action-message">...weil Coding Spaß macht!... </p> -->
+          <p id="action-message">...weil ich keine Cookies sammle... </p>
+          <div class="score-board">
+            <div id="user-label" class="badge">Du</div>
+            <div id="computer-label" class="badge" id="badge-chris">Chris</div>
+            <span id="user-score">0</span>
+            : <span id="computer-score">0</span>
+            <button
+              class="button pointer-enter center"
+              id="reset"
+              onclick="resetGame()"
+            >
+              <span class="button-span">Neu starten</span>
+            </button>
+          </div>
+
+          <div>
+            <div class="result">
+              <p>Lust auf eine Runde?</p>
+            </div>
+            <div class="choices">
+              <div
+                id="r"
+                accesskey="r"
+                name="stein"
+                class="choice pointer-enter"
+              >
+                <img class="choice-img" id="choice-img-rock" src="public/images/rock.png" alt="Stein" />
+                <p class="game-label" id="game-label-rock">Stein</p><p class="game-label" id="game-label-meteor">"Meteor"</p>
+              </div>
+              <div
+                id="p"
+                accesskey="p"
+                name="Papier"
+                class="choice pointer-enter"
+              >
+                <img class="choice-img" id="choice-img-paper" src="public/images/paper.png" alt="Papier" />
+                <p class="game-label" id="game-label-paper">Papier</p><p class="game-label" id="game-label-galaxy">"Galaxie"</p>
+              </div>
+
+              <div
+                id="s"
+                accesskey="s"
+                name="Schere"
+                class="choice pointer-enter"
+              >
+                <img class="choice-img" id="choice-img-scissors" src="public/images/scissors.png" alt="Schere" />
+                <p class="game-label" id="game-label-scissors">Schere</p><p class="game-label" id="game-label-vulkanier">"Vulkanier"</p>
+              </div>
+            </div>
+            <p id="action-message-small">
+            </p>
+          </div>
+        </div>
+
+        <!--End of Schere-Stein-Papier-->
+        <!-- End of Section 5 - Game -->
+      </section>
+    <section>
+        <div class="slideshow">
+            <a
+              onClick="window.open('https://github.com/chrisKernCode','_blank');"
+              class="slideshow-link light"
+            >
+              <img
+                class="pointer-enter"
+                src="/public/images/social-icons/slideshow-img-2.png"
+                alt="github profil"
+              />
+            </a>
+            <a
+              onClick="window.open('https://linkedin.com/in/christof-kern','_blank');"
+              class="slideshow-link light"
+            >
+              <img
+                class="pointer-enter"
+                src="/public/images/social-icons/slideshow-img-3.png"
+                alt="linkedin profil"
+              />
+            </a>
+            <a
+              onClick="window.open('https://twitter.com/chris_k_e_r_n','_blank');"
+              class="slideshow-link light"
+            >
+              <img
+                src="/public/images/social-icons/slideshow-img-4.png"
+                alt="twitter profil"
+              />
+            </a>
+            <a
+              onClick="window.open('https://www.youtube.com/watch?v=oqPQ8h4nmDk','_blank');"
+              class="slideshow-link light"
+            >
+              <img
+                class="pointer-enter"
+                src="/public/images/social-icons/slideshow-img-5.png"
+                alt="Meet Ryan - youtube video"
+              />
+            </a>
+            <a
+            onClick="window.open('https://www.xing.com/profile/Christof_Kern4/cv','_blank');"
+            class="slideshow-link light"
+          >
+            <img
+              class="pointer-enter"
+              src="/public/images/social-icons/slideshow-img-6.png"
+              alt="Xing"
+            />
+          </a>
+        </div>
+    </section>
+          <!-- End of Slideshow -->
+          <!--  End of Social Buttons -->
+     
+          <!-- Footer -->
+      <section>
+        <footer class="footer">
+          <h2>Bewerbungs-Portfolio<br />&copy; 2022 - Christof Kern, MA</h2>
+          <div>
+          <p>
+            <a class="pointer-enter" href="/impressum.html">Impressum</a>
+            <a class="pointer-enter" href="/dsgvo.html">Datenschutz</a>
+        </p>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+      </section>
+    </main>
+    </div>
+ 
+      <video width="100%" controls>
+        <source src="/public/images/game/universe.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+      
+      <!-- End of Page Container -->
+
+<script src="/public/js/background.js"></script>
+<script src="/public/js/mainScript.js"></script>
+<script src="/public/js/game.js"></script>
+</body>
+</html>
