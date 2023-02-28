@@ -1,0 +1,313 @@
+/* Schere-Stein-Papier Spiel */
+
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap");
+
+/* Section 5 */
+.section-game {
+  display:flex;
+  margin-top: 15rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.game-heading-text {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+.game-heading-text-top span {
+  font-family: "Poppins", sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  color: #aaa;
+  letter-spacing: 0.5rem;
+  line-height: 1.;
+  text-shadow: 0 0 1rem #9b0e0e;
+  position: relative;
+  /* mix-blend-mode: color-dodge; */
+}
+
+.game-heading-text span {
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #aaa;
+  letter-spacing: 0.5rem;
+  line-height: 1.;
+  text-shadow: 0 0 1rem #9b0e0e;
+  position: relative;
+  /* mix-blend-mode: color-dodge; */
+}
+
+@keyframes gameTextAnim {
+  0% {
+    color: #aaa;
+    top: 0;
+  }
+  10%,
+  90% {
+    color: #fff;
+    top: 2rem;
+  }
+  100% {
+    color: #aaa;
+    top: 0;
+  }
+}
+
+/* .h3-game {
+  color: #f4f6fc;
+  text-align: center;
+  font-family: Asap;
+  font-size: 48px;
+} */
+
+.score-board {
+  margin: 20px auto;
+  border: 3px solid white;
+  border-radius: 10%;
+  text-align: center;
+  width: 200px;
+  color: #fcfcfd;
+  font-size: 46px;
+  padding: 15px 20px;
+  font-family: Asap, sans-serif;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.badge {
+  background: #5c5959;
+  color: white;
+  font-size: 14px;
+  padding: 2px 10px;
+  font-size: Asap, sans-serif;
+}
+
+.badge:hover {
+  background-color: #2e2d2d;
+  transition: 1s;
+  animation-name: rotation-transformation;
+  animation-duration: 3s;
+}
+
+@keyframes rotation-transformation {
+  50% {
+    transform: rotate(-30deg) scale(2.5);
+  }
+  100% {
+    transform: rotate(30deg) scale(1);
+  }
+}
+.rotating-badge {
+  animation-name: rotation-badge;
+  animation-duration: 2s;
+}
+
+@keyframes rotation-badge {
+  50% {
+    transform: rotate(-30deg) scale(2.5);
+  }
+  90% {
+    transform: rotate(30deg) scale(1);
+  }
+}
+
+.badge:not(hover) {
+  background-color: #5c5959;
+  transition: 1.5s;
+  transform: rotate(30deg);
+}
+
+#user-label {
+  position: absolute;
+  top: 40px;
+  left: -25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#computer-label {
+  position: absolute;
+  top: 40px;
+  right: -30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.result {
+  font-size: 40px;
+  color: white;
+}
+
+.result > p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #aaa;
+  letter-spacing: 0.5rem;
+  line-height: 0.9;
+  text-shadow: 0 0 1rem #9b0e0e;
+  position: relative;
+  /* mix-blend-mode: color-dodge; */
+}
+
+.choices {
+  margin-top: 50px;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  margin-bottom:12rem;
+}
+
+.choice {
+  max-width: 100%;
+  height: auto;
+  border: 4px solid white;
+  border-radius: 30%;
+  margin: 0 20 px;
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin-right: 30px;
+  opacity: 0.7;
+  box-shadow: 5px 5px 5px 0px rgb(17, 17, 17);
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: rgb(73, 71, 71);
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.choice-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+#r:hover {
+  background: url(/public/images/game/meteor.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#p:hover {
+  background: url(/public/images/game/galaxy-game.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#s:hover {
+  background: url(/public/images/game/vulanier.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+/* Paper */
+div#p p#choice-img-paper {
+  display: inline;
+}
+
+div#p:hover #choice-img-paper {
+  transform: scale(0.4) scaleX(-1);
+  -webkit-transform: scale(0.4) scaleX(-1);
+  animation-iteration-count: 1;
+}
+
+div#p p#game-label-galaxy {
+  display: none;
+}
+div#p:hover p#game-label-galaxy {
+  display: inline;
+}
+
+div#s p#choice-img-scissors {
+  display: inline;
+}
+
+/* Scissors */
+div#s:hover #choice-img-scissors {
+  transform: scale(0.4) scaleX(-1);
+  -webkit-transform: scale(0.4) scaleX(-1);
+  animation-iteration-count: 1;
+}
+
+div#s p#game-label-vulkanier {
+  display: none;
+}
+div#s:hover p#game-label-vulkanier {
+  display: inline;
+}
+
+/* Rock */
+div#r p#choice-img-rock {
+  display: inline;
+}
+
+div#r:hover #choice-img-rock {
+  transform: scale(0.4) scaleX(-1);
+  -webkit-transform: scale(0.4) scaleX(-1);
+  animation-iteration-count: 1;
+}
+
+div#r p#game-label-meteor {
+  display: none;
+}
+div#r:hover p#game-label-meteor {
+  display: inline;
+}
+
+.game-label {
+  color: white;
+  font-size: 28px;
+  z-index: 1;
+}
+
+#action-message {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(196, 189, 189);
+  letter-spacing: 0.5rem;
+  line-height: 1.3;
+  text-shadow: 0 0 1rem #9b0e0e;
+  position: relative;
+  /* mix-blend-mode: color-dodge; */
+}
+
+#action-message-small {
+  text-align: center;
+  color: rgb(196, 189, 189);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 1rem #414040;
+  font-size: 32px;
+  margin-top: 20px;
+  position: relative;
+  /* mix-blend-mode: color-dodge; */
+}
+
+.green-glow {
+  border: 4px solid #4dcc7d;
+  box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+  border: 4px solid #cf1a20;
+  box-shadow: 0 0 10px #9b0e0e;
+}
+
+.gray-glow {
+  border: 4px solid #464647;
+  box-shadow: 0 0 10px #25292b;
+}
+
+/* Schere-Stein-Papier Spiel Ende*/

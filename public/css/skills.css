@@ -1,0 +1,182 @@
+.section-skills {
+    position: relative;
+    max-width: 100%;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+  
+  /* Services */
+  .services-wrapper {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
+  
+  .service {
+    width: 90%;
+    margin: 2rem 0;
+    border-bottom: 0.5rem solid #9b0e0e;
+  }
+  
+  .service-btn {
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 15rem;
+    opacity: 0.6;
+  }
+  
+  .service-btn span {
+    font-family: "Poppins", sans-serif;
+    font-size: 8rem;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(194, 189, 189);
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+    transition: right 1s;
+    text-shadow: 0 0.3rem 0.5rem #000;
+  }
+  
+  .service-btn:hover {
+    transform: scale(1.05) translateX(-20px);
+    transition: opacity 1.5s, visibility 0.5s, transform 0.5s;
+    opacity: 1;
+  }
+  
+  .service-btn:not(hover) {
+    transition: transform 0.5s;
+  }
+  
+  .service-text {
+    max-width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(218, 216, 216);
+    letter-spacing: 0.1rem;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+    display: column;
+  }
+  
+  .change.service-text {
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    visibility: visible;
+    opacity: 1;
+    transition: height 0.5s, opacity 0.5s 0.5s;
+  }
+  
+  .service-text-certificates {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(218, 216, 216);
+    letter-spacing: 0.1rem;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    align-items: center;
+  }
+  
+  .change.service-text-certificates {
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    visibility: visible;
+    opacity: 1;
+    transition: height 0.5s, opacity 0.5s 0.5s;
+  }
+  
+  .service-text-certificates-button {
+    display: inline-block;
+    border-radius: 25%;
+    background: linear-gradient(45deg, rgb(155, 56, 56), #9b0e0e);
+    border-color: #ffffff;
+    border-width: 6px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    padding: 12px;
+    width: relative;
+    height: relative;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 10px 10px 10px 0px rgb(30, 30, 31);
+  }
+  
+  .service-text-certificates-button:hover {
+    background: linear-gradient(45deg, rgb(95, 95, 95), black);
+  }
+  
+  .service-text-certificates-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .service-text-certificates-button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .service-text-certificates-button:hover span {
+    padding-right: 25px;
+  }
+  
+  .service-text-certificates-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .service-link {
+    color: rgb(218, 216, 216);
+  }
+  
+  .CV {
+    max-width: 70%;
+    height: auto;
+    border-radius: 5%;
+    border: 1px solid #ddd;
+  }
+  
+  .PA {
+    width: 100px;
+    height: auto;
+    border-radius: 5%;
+    border: 1px solid #ddd;
+  }
+  
+  /* End of Services */
+  /* End of Section 4 */
+
+  /* planets  */
+
+.show-planets {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 12rem;
+    margin-bottom: 3rem;
+    padding-right: 15px;
+    overflow: hidden;
+    width: 90%;
+  }
+  /* End of planets */

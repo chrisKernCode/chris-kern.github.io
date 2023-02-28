@@ -1,0 +1,18 @@
+.imprint {
+    padding-top: 12rem;
+    color: white;
+    font-size: 14px;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  
+  .credits {
+    padding-top: 2rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  
+  .credits a{
+    color: white;
+    font-size: 14px;
+  }
